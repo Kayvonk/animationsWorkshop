@@ -17,10 +17,13 @@ body {
 }
 
 .card {
-  width: 20%;
-  height: 50%;
+  width: 15vw;
+  height: 30vh;
   background-color: lightgoldenrodyellow;
   border: 2px black solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #gameMenu {
@@ -37,6 +40,86 @@ body {
   border-radius: 12px;
   box-shadow: 2px 2px 2px 0px;
 }
+
 #startBtn:hover {
   background-color: lightgray;
+}
+
+.flip {
+  animation: flip 4s linear, swapColor 4s linear forwards;
+}
+
+.catImg {
+  width: 50%;
+  visibility: hidden;
+}
+
+.reveal {
+  animation: reveal 4s linear forwards;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotateY(-180deg);
+  }
+
+  25% {
+    transform: rotateY(0deg);
+  }
+
+  75% {
+    transform: rotateY(0deg);
+  }
+
+  100% {
+    transform: rotateY(-180deg);
+  }
+}
+
+@keyframes swapColor {
+  0% {
+    background-color: lightgoldenrodyellow;
+  }
+
+  12.4% {
+    background-color: lightgoldenrodyellow;
+  }
+
+  12.5% {
+    background-color: white;
+  }
+
+  87.4% {
+    background-color: white;
+  }
+
+  87.5% {
+    background-color: lightgoldenrodyellow;
+  }
+
+  100% {
+    background-color: lightgoldenrodyellow;
+  }
+}
+
+@keyframes reveal {
+  0% {
+    visibility: hidden;
+  }
+
+  12.5% {
+    visibility: hidden;
+  }
+
+  25% {
+    visibility: visible;
+  }
+
+  87.5% {
+    visibility: hidden;
+  }
+
+  100% {
+    visibility: hidden;
+  }
 }
