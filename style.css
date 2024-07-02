@@ -1,0 +1,42 @@
+body {
+  margin: 0;
+  background-color: lightblue;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cardsContainer {
+  width: 80vw;
+  height: 60vh;
+  background-color: lightsalmon;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.card {
+  width: 20%;
+  height: 50%;
+  background-color: lightgoldenrodyellow;
+  border: 2px black solid;
+}
+
+#gameMenu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+#startBtn {
+  margin-top: 50px;
+  padding: 20px 45px;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 2px 2px 2px 0px;
+}
+#startBtn:hover {
+  background-color: lightgray;
+}
